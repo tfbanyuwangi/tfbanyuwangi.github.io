@@ -50,7 +50,7 @@ const menus = [{
     <Transition name="slide-fade" mode="in-out" :duration="{ enter: 500, leave: 800 }">
         <aside
         v-if="sidebar"
-        class="fixed left-0 z-20 h-screen w-56 pt-20 bg-slate-50 dark:bg-slate-700 shadow overflow-y-auto">
+        class="fixed left-0 z-20 h-screen w-56 pt-20 bg-slate-700 shadow overflow-y-auto">
             <Sider :menus="menus" />
         </aside>
     </Transition>
