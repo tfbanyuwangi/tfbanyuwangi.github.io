@@ -33,7 +33,7 @@ const menus = [{
 <template>
     <nav class="fixed top-0 z-30 h-16 md:h-20 w-72 md:w-full flex items-center gap-6 px-4 md:px-8 py-3 bg-slate-800 rounded-br-2xl md:rounded-none shadow-lg">
         <button type="button" @click="toggleSidebar()" @keydown.esc="closeSidebar()" class="inline md:hidden">
-            <i class="mdi mdi-dots-grid text-xl text-white" />
+            <i class="mdi mdi-dots-grid text-xl text-fdtbw" />
         </button>
 
         <router-link v-scroll-to="`#app`" to="/" @click="closeSidebar()">
