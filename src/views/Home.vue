@@ -57,9 +57,11 @@ const page = ref(1),
                 Peta akan segera tersedia untuk umum melalui situs kami. -->
             </p>
 
-            <SecondaryButton>
-                Isi Formulir <i class="mdi mdi-chevron-right" />
-            </SecondaryButton>
+            <a href="https://bit.ly/PetaTransumBanyuwangi">
+                <SecondaryButton>
+                    Isi Formulir <i class="mdi mdi-chevron-right" />
+                </SecondaryButton>
+            </a>
         </div>
 
         <section id="intro" class="p-8 lg:p-16">
