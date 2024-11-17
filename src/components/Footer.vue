@@ -20,7 +20,7 @@ import { contacts, socials } from "../data";
                     </p>
 
                     <div class="flex gap-4 mt-4">
-                        <a v-for="(social, i) in socials" :key="i" :title="social.title" :href="social.href" class="p-2 text-fdtbw bg-slate-900 rounded-full w-10 aspect-square flex items-center justify-center hover:text-slate-900 hover:bg-fdtbw">
+                        <a v-for="(social, i) in socials" :key="i" :title="social.title" :href="social.href" class="p-2 text-fdtbw bg-slate-700 rounded-full w-10 aspect-square flex items-center justify-center hover:text-slate-100 hover:bg-slate-800">
                             <i :class="social.icon"></i>
                         </a>
                     </div>

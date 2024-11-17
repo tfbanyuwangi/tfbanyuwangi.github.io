@@ -50,11 +50,11 @@ const socials = [{
     name: 'Facebook',
     href: 'https://www.facebook.com/internationalaffairsUM',
     icon: 'mdi mdi-facebook',
-}, *//*  {
+}, */ {
     name: 'Instagram',
     href: instagram,
     icon: 'mdi mdi-instagram',
-}, */ /* {
+}, /* {
     name: 'YouTube',
     href: 'https://www.youtube.com/channel/UC1XP5w9EUyHGsKdZJU-awcQ/',
     icon: 'mdi mdi-youtube',

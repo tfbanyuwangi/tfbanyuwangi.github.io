@@ -23,7 +23,7 @@ const page = ref(1),
         <div class="grid md:grid-cols-2 bg-fdtbw text-slate-800 rounded-xl m-8 lg:mx-16">
 
             <div class="!bg-no-repeat !bg-center !bg-cover rounded-t-xl md:rounded-l-xl md:rounded-tr-none min-h-[50vh]" style="background: url('pubtrans.jpg')">
-                <div class="bg-fdtbw/30 h-full w-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none" />
+                <div class="bg-fdtbw/10 h-full w-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none" />
             </div>
 
             <div class="text-lg px-8 py-12 flex items-center">
@@ -36,7 +36,7 @@ const page = ref(1),
                     </p>
 
                     <a :href="map">
-                        <SecondaryButton disabled>
+                        <SecondaryButton>
                             Unduh Peta <i class="mdi mdi-download" />
                         </SecondaryButton>
                     </a>     
@@ -50,10 +50,16 @@ const page = ref(1),
                 Pemberitahuan
             </h2>
 
-            <p class="mt-4">
-                Pengembangan peta sedang dilaksanakan dan berkolaborasi dengan Pemerintah Kabupaten Banyuwangi.
-                Peta akan segera tersedia untuk umum melalui situs kami.
+            <p class="my-4">
+                Kami telah merilis akses beta peta transportasi Banyuwangi. Peta ini berisi informasi rute angkutan umum, lokasi halte, dan informasi lainnya yang dapat membantu Anda dalam perjalanan.
+                Silakan isi formulir berikut untuk memberikan masukan atas pengalaman Anda menggunakan peta ini.
+                <!-- Pengembangan peta sedang dilaksanakan dan berkolaborasi dengan Pemerintah Kabupaten Banyuwangi.
+                Peta akan segera tersedia untuk umum melalui situs kami. -->
             </p>
+
+            <SecondaryButton>
+                Isi Formulir <i class="mdi mdi-chevron-right" />
+            </SecondaryButton>
         </div>
 
         <section id="intro" class="p-8 lg:p-16">
@@ -74,7 +80,7 @@ const page = ref(1),
                             </router-link>
 
                             <a :href="map">
-                                <SecondaryButton disabled>
+                                <SecondaryButton>
                                     Unduh Peta <i class="mdi mdi-download" />
                                 </SecondaryButton>
                             </a>
