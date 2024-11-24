@@ -5,6 +5,8 @@ import { links, wayfindings } from '../data'
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import L from 'leaflet'
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import 'leaflet/dist/leaflet.css'
 
 onMounted(() => {
@@ -15,10 +17,19 @@ onMounted(() => {
         // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map)
 
+    const customIcon = L.icon({
+        iconUrl: markerIcon,
+        shadowUrl: markerShadow,
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+
     const router = useRouter()
 
     wayfindings.forEach(location => {
-        L.marker([location.lat, location.lng])
+        L.marker([location.lat, location.lng], {icon: customIcon})
             .addTo(map)
             .bindPopup(`<a href="#" class="router-link" data-route="${location.route}">${location.title}</a>`)
     })
