@@ -3,6 +3,8 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Links from './views/Links.vue'
 import NotFound from './views/NotFound.vue'
+import Wayfindings from './views/Wayfindings.vue'
+import WayfindingDetail from './views/WayfindingDetail.vue'
 
 const generateTags = (name, content) => {
     return {
@@ -65,15 +67,23 @@ const router = createRouter({
             title: 'FDTBW - TfBW | Link cepat',
             metaTags: homeTags
         }
-    }, /* {
-        path: '/informations/:information',
-        name: 'FDTBW Redirect',
-        component: information,
+    }, , {
+        path: '/wayfindings',
+        name: 'Wayfinding',
+        component: Wayfindings,
         meta: {
-            title: 'Redirect link - FDTBW',
+            title: 'Sebaran Penunjuk - FDTBW',
             metaTags: homeTags
         }
-    }, */ {
+    }, {
+        path: '/wayfindings/:wayfinding',
+        name: 'Wayfinding Detail',
+        component: WayfindingDetail,
+        meta: {
+            title: 'Detail Penunjuk - FDTBW',
+            metaTags: homeTags
+        }
+    }, {
         path: '/:pathMatch(.*)*',
         name: '404',
         component: NotFound,
