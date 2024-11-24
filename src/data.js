@@ -348,36 +348,8 @@ const wayfindings = [{
     id: '0F7E0240-E32A-4955-9FB8-6448A6EFFF8A',
     title: 'Halte SDN 4 Penganjuran B',
     lat: -8.219642,
-    lng: 114.368927,
+    lng: 114.368117,
     directions: [{
-        rtl: false,
-        color: 'primary',
-        rotate: 0,
-        contents: [{
-            type: 'arrow',
-        }, {
-            type: 'box',
-            context: 'school',
-        }, {
-            type: 'multilang',
-            id: 'STIKOM PGRI',
-            en: 'STIKOM PGRI',
-        }]
-    }, {
-        rtl: true,
-        color: 'primary',
-        rotate: 180,
-        contents: [{
-            type: 'arrow',
-        }, {
-            type: 'box',
-            context: 'museum',
-        }, {
-            type: 'multilang',
-            id: 'Museum Blambangan',
-            en: 'Blambangan Museum',
-        }]
-    }, {
         rtl: true,
         color: 'primary',
         rotate: 180,
@@ -388,16 +360,13 @@ const wayfindings = [{
             context: 'school',
         }, {
             type: 'multilang',
-            id: 'SMPN 1 Banyuwangi',
-            en: 'Junior High School 1 Banyuwangi',
-        }, {
-            type: 'walk',
-            distance: 100,
+            id: 'SDN 4 Penganjuran',
+            en: 'Elementary School 4 Penganjuran',
         }]
     }, {
-        rtl: false,
+        rtl: true,
         color: 'secondary',
-        rotate: 0,
+        rotate: 180,
         contents: [{
             type: 'arrow',
         }, {
@@ -405,18 +374,15 @@ const wayfindings = [{
             context: 'bus',
         }, {
             type: 'multilang',
-            id: 'Perhentian Angkutan Kota STIKOM B',
-            en: 'STIKOM B Microbuses Stop',
-        }, {
-            type: 'lines',
-            served: [1, 5]
+            id: 'Perhentian Angkutan Kota SDN 4 Penganjuran B',
+            en: 'SDN 4 Penganjuran B Microbuses Stop',
         }]
     }],
     stops: [{
         line: lines[0],
-        towards: terminuses[1],
+        towards: terminuses[0],
     }, {
-        line: lines[7],
+        line: lines[4],
         towards: terminuses[2],
     }]
 }, {
